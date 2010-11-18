@@ -47,7 +47,7 @@ class Forecast < ActiveRecord::Base
   def self.diff(yesterday, today)
     dir = (today > yesterday) ? "warmer" : "colder"
     mag = (today - yesterday).abs.round(2)
-    "#{mag} degrees #{dir}"
+    [mag, dir]
   end
   
   def self.relative(q)
