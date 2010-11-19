@@ -103,3 +103,207 @@ Completed in 28ms (View: 27, DB: 0) | 200 OK [http://localhost/forecast]
   [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
   [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE ("forecasts"."date" = '2010-11-17' AND "forecasts"."city" = 'New York, NY') LIMIT 1[0m
   [4;35;1mForecast Load (0.6ms)[0m   [0mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "date" date NOT NULL) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;35;1mSQL (31.7ms)[0m   [0mDROP TABLE "forecasts"[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "date" date NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("altered_forecasts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_forecasts"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "date" date NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "forecasts"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "date" date NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_forecasts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_forecasts"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "date" date NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "forecasts"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_forecasts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_forecasts"[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mALTER TABLE "forecasts" ADD "time" datetime[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101119122924')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (37.2ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mALTER TABLE "forecasts" ADD "low" integer[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mALTER TABLE "forecasts" ADD "high" integer[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mALTER TABLE "forecasts" ADD "date" date[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL, "low" integer NOT NULL, "high" integer NOT NULL, "date" date NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL, "low" integer NOT NULL, "high" integer NOT NULL, "date" date NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: sessions: DELETE FROM sessions[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateForecasts (20101118051650)
+Migrating to ChangeToDate (20101118054221)
+Migrating to Simplify (20101119122924)
+Migrating to Simplify2 (20101119123118)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL, "low" integer NOT NULL, "high" integer NOT NULL, "date" date NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateForecasts (20101118051650)
+Migrating to ChangeToDate (20101118054221)
+Migrating to Simplify (20101119122924)
+Migrating to Simplify2 (20101119123118)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL, "low" integer NOT NULL, "high" integer NOT NULL, "date" date NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateForecasts (20101118051650)
+Migrating to ChangeToDate (20101118054221)
+Migrating to Simplify (20101119122924)
+Migrating to Simplify2 (20101119123118)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL, "low" integer NOT NULL, "high" integer NOT NULL, "date" date NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL, "low" integer NOT NULL, "high" integer NOT NULL, "date" date NOT NULL) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE TABLE "forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (1.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101119122924')[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20101118051650')[0m
+  [4;36;1mSQL (3.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20101118054221')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "low_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "forecasts"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_forecasts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_forecasts"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TEMPORARY TABLE "altered_forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "high_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("forecasts")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDROP TABLE "forecasts"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "forecasts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "zip_code" varchar(255) NOT NULL, "city" varchar(255) NOT NULL, "current_temperature" integer NOT NULL, "humidity" integer NOT NULL, "conditions" varchar(255) NOT NULL, "wind" varchar(255) NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "time" datetime NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_forecasts")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDROP TABLE "altered_forecasts"[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20101119123118')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("forecasts")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSQLite3::SQLException: database schema has changed: SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-19 12:27:41' and time <= '2010-11-19 13:07:41' and city = 'New York, NY') [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('New York, NY', 'New York, NY', 41, 61, 'Partly Cloudy', 'Wind: NW at 12 mph', '2010-11-19 12:48:43', '2010-11-19 12:48:43', '2010-11-19 12:48:43')[0m
+  [4;36;1mForecast Load (0.4ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-19 12:28:49' and time <= '2010-11-19 13:08:49' and city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-10-30 12:49:04' and time <= '2010-11-19 12:29:04' and city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-10-30 12:50:56' and time <= '2010-11-19 12:30:56' and city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-19 12:31:01' and time <= '2010-11-19 13:11:01' and city = 'New York, NY') [0m

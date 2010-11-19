@@ -5,11 +5,11 @@ class Forecast < ActiveRecord::Base
     `curl --silent http://www.google.com/ig/api?weather=#{q}`
   end
   
-  def self.have_for_date_and_city(date, city)
-    Forecast.find_by_date_and_city(date, city)
+  def self.have_for_city(city)
+    Forecast.count(:all, :conditions => ["city = ?", city]) > 0
   end
   
-  def self.get(q)
+  def self.get(q, auto=false)
     require 'rexml/document'
     include REXML
     
@@ -17,43 +17,50 @@ class Forecast < ActiveRecord::Base
       node.elements[name].attributes["data"]
     end
     
-    doc = Document.new Forecast.hit_google_api(q)
-    meta = doc.elements["/xml_api_reply/weather/forecast_information"]
-    current = doc.elements["/xml_api_reply/weather/current_conditions"]
-    forecast = doc.elements["/xml_api_reply/weather/forecast_conditions"]
-    f = {
-      :date => ( d = Date.parse(el(meta, "forecast_date")) ),
-      :city => (c = el(meta, "city") ),
-      :zip_code => el(meta, "postal_code"),
-      :current_temperature => el(current, "temp_f"),
-      :low_temperature => el(forecast, "low"),
-      :high_temperature => el(forecast, "high"),
-      :humidity => el(current, "humidity")[/Humidity: (\d+)%/, 1],
-      :conditions => el(current, "condition"),
-      :wind => el(current, "wind_condition")
-    }
-    
-    if !Forecast.have_for_date_and_city(d, c)
-      Forecast.create(f)
+    begin
+      doc = Document.new Forecast.hit_google_api(q)
+      meta = doc.elements["/xml_api_reply/weather/forecast_information"]
+      current = doc.elements["/xml_api_reply/weather/current_conditions"]
+      f = {
+        :time => Time.now,
+        :city => (c = el(meta, "city") ),
+        :zip_code => el(meta, "postal_code"),
+        :current_temperature => el(current, "temp_f"),
+        :humidity => el(current, "humidity")[/Humidity: (\d+)%/, 1],
+        :conditions => el(current, "condition"),
+        :wind => el(current, "wind_condition")
+      }
+      
+      if !Forecast.have_for_city(c) or auto
+        Forecast.create(f)
+      end
+      
+      return f
+    rescue Exception => e
+      puts e
     end
-    
-    f
   end
   
-  def average_temperature
-    (self.low_temperature + self.high_temperature) / 2.0
+  def self.all_within_window_for_city(strt, nd, city)
+    Forecast.find(:all, 
+      :conditions => [
+        "time >= ? and time <= ? and city = ?",
+        strt, nd, city
+      ]
+    ).collect(&:current_temperature)
   end
   
-  def self.diff(yesterday, today)
+  def self.diff(olds, now)
+    yesterday = olds.sum / olds.length.to_f
     dir = (today > yesterday) ? "warmer" : "colder"
     mag = (today - yesterday).abs.round(2)
     [mag, dir]
   end
   
-  def self.relative(q)
+  def self.relative(q, strt=10.minutes.ago, nd=10.minutes.from_now)
     t = Forecast.get(q)
-    yesterday = Forecast.find_by_date_and_city(Date.yesterday, t[:city])
-    Forecast.diff(yesterday.average_temperature, t[:current_temperature].to_i)
+    yesterdays = Forecast.all_within_window(strt - 1.day, nd - 1.day, t[:city])
+    Forecast.diff(yesterdays, t[:current_temperature].to_i)
   end
 
 end

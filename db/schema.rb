@@ -9,20 +9,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101118054221) do
+ActiveRecord::Schema.define(:version => 20101119123118) do
 
   create_table "forecasts", :force => true do |t|
     t.string   "zip_code",            :null => false
     t.string   "city",                :null => false
     t.integer  "current_temperature", :null => false
-    t.integer  "low_temperature",     :null => false
-    t.integer  "high_temperature",    :null => false
     t.integer  "humidity",            :null => false
     t.string   "conditions",          :null => false
     t.string   "wind",                :null => false
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
-    t.date     "date",                :null => false
+    t.datetime "time",                :null => false
   end
 
 end
