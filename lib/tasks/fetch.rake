@@ -8,7 +8,7 @@ namespace :fetch do
   end
   
   task :hourlies => :environment do
-    Forecast.all.collect(&:cities).each do |c|
+    Forecast.all.collect(&:city).each do |c|
       Forecast.get(c, auto = true)
     end
   end
