@@ -1353,3 +1353,70 @@ Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:36:53) [GET]
   [4;35;1mForecast Load (0.8ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 13:01:53' and time <= '2010-11-18 14:11:53' and city = 'New York, NY') [0m
 Rendering forecast/for
 Completed in 223ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:37:34) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.8ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 13:02:34' and time <= '2010-11-18 14:12:34' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 241ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:37:41) [GET]
+  Parameters: {"id"=>"10019"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.8ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 13:02:41' and time <= '2010-11-18 14:12:41' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 146ms (View: 2, DB: 1) | 200 OK [http://localhost/forecast/for/10019]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:37:47) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.7ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 13:02:47' and time <= '2010-11-18 14:12:47' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 143ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/10023]
+  [4;36;1mForecast Load (3.0ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+  [4;35;1mForecast Load (3.0ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mForecast Load (5.6ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE ("forecasts"."city" = 'New York, NY') [0m
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:45:15) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (6.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 166ms (View: 2, DB: 7) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:45:44) [GET]
+  Parameters: {"id"=>"10023"}
+
+SyntaxError (/Users/jsomers/relweather/app/models/forecast.rb:50: syntax error, unexpected ')', expecting '}'
+/Users/jsomers/relweather/app/models/forecast.rb:67: syntax error, unexpected keyword_end, expecting '}'):
+  app/controllers/forecast_controller.rb:11:in `for'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (180.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:45:51) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (6.0ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 172ms (View: 2, DB: 6) | 200 OK [http://localhost/forecast/for/10023]

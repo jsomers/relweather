@@ -47,7 +47,7 @@ class Forecast < ActiveRecord::Base
         "time >= ? and time <= ? and city = ?",
         strt, nd, city
       ]
-    ).collect(&:current_temperature)
+    ).collect {|f| [f.time.to_i, f.current_temperature]}
   end
   
   def self.diff(olds, today)
@@ -57,11 +57,11 @@ class Forecast < ActiveRecord::Base
     [mag, dir]
   end
   
-  def self.relative(q, strt=35.minutes.ago, nd=35.minutes.from_now)
+  def self.relative(q)
     t = Forecast.get(q)
-    yesterdays = if t then Forecast.all_within_window_for_city(strt - 1.day, nd - 1.day, t[:city]) else [] end
+    yesterdays = if t then Forecast.all_within_window_for_city(Date.yesterday, Date.today, t[:city]) else [] end
     if yesterdays.empty? then return nil end
-    [t, Forecast.diff(yesterdays, t[:current_temperature].to_i)]
+    [t, yesterdays]
   end
 
 end
