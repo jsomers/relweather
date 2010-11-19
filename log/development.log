@@ -307,3 +307,1049 @@ Migrating to Simplify2 (20101119123118)
   [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-10-30 12:49:04' and time <= '2010-11-19 12:29:04' and city = 'New York, NY') [0m
   [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-10-30 12:50:56' and time <= '2010-11-19 12:30:56' and city = 'New York, NY') [0m
   [4;35;1mForecast Load (0.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-19 12:31:01' and time <= '2010-11-19 13:11:01' and city = 'New York, NY') [0m
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 07:55:18) [GET]
+Rendering forecast/index
+Completed in 221ms (View: 67, DB: 0) | 200 OK [http://localhost/forecast]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 07:55:35) [GET]
+Completed in 110ms (View: 3, DB: 0) | 200 OK [http://localhost/forecast]
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 07:58:33) [GET]
+Rendering forecast/search
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 07:58:37) [GET]
+  Parameters: {"q"=>"New York, NY"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/models/forecast.rb:62:in `relative'
+  app/controllers/forecast_controller.rb:6:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (103.3ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 07:59:56) [GET]
+Rendering forecast/search
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:00:00) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/index/New%20York,%20NY
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:00:00) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `all_within_window' for #<Class:0x17e6674>):
+  app/models/forecast.rb:62:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (72.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:00:15) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `all_within_window' for #<Class:0x3674bf0>):
+  app/models/forecast.rb:62:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (75.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 08:00:16) [GET]
+Rendering forecast/search
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 08:00:17) [GET]
+Rendering forecast/search
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:00:20) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/index/New%20York,%20NY
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:00:21) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `all_within_window' for #<Class:0x2b6f870>):
+  app/models/forecast.rb:62:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (149.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:00:37) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `all_within_window' for #<Class:0x2ec454c>):
+  app/models/forecast.rb:63:in `relative'
+  app/controllers/forecast_controller.rb:11:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (73.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:01:30) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `all_within_window' for #<Class:0x2e25a98>):
+  app/models/forecast.rb:63:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (146.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:02:39) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mForecast Load (0.4ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:52:39' and time <= '2010-11-18 13:12:39' and city = 'New York, NY') [0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NameError (undefined local variable or method `today' for #<Class:0x367ce18>):
+  app/models/forecast.rb:55:in `diff'
+  app/models/forecast.rb:64:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (78.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:03:29) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:53:29' and time <= '2010-11-18 13:13:29' and city = 'New York, NY') [0m
+
+FloatDomainError (NaN):
+  app/models/forecast.rb:56:in `diff'
+  app/models/forecast.rb:63:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (68.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;35;1mForecast Load (0.6ms)[0m   [0mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+  [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+  [4;36;1mForecast Create (0.5ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 37, 61, '2010-11-18 12:48:43', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:06:17) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:56:17' and time <= '2010-11-18 13:16:17' and city = 'New York, NY') [0m
+
+FloatDomainError (NaN):
+  app/models/forecast.rb:56:in `diff'
+  app/models/forecast.rb:64:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (83.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:06:36) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:56:36' and time <= '2010-11-18 13:16:36' and city = 'New York, NY') [0m
+
+FloatDomainError (NaN):
+  app/models/forecast.rb:56:in `diff'
+  app/models/forecast.rb:63:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (77.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:06:49) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:56:49' and time <= '2010-11-18 13:16:49' and city = 'New York, NY') [0m
+
+FloatDomainError (NaN):
+  app/models/forecast.rb:56:in `diff'
+  app/models/forecast.rb:64:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (82.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:07:39) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:57:39' and time <= '2010-11-18 13:17:39' and city = 'New York, NY') [0m
+
+FloatDomainError (NaN):
+  app/models/forecast.rb:56:in `diff'
+  app/models/forecast.rb:64:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (76.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:07:56) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+  [4;35;1mForecast Load (0.4ms)[0m   [0mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+  [4;35;1mForecast Load (0.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:57:56' and time <= '2010-11-18 13:17:56' and city = 'New York, NY') [0m
+
+FloatDomainError (NaN):
+  app/models/forecast.rb:56:in `diff'
+  app/models/forecast.rb:65:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (160.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:11:46) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:36:46' and time <= '2010-11-18 13:46:46' and city = 'New York, NY') [0m
+Rendering forecast/index
+Completed in 183ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/index/New%20York,%20NY]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:11:48) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:36:48' and time <= '2010-11-18 13:46:48' and city = 'New York, NY') [0m
+Rendering forecast/index
+Completed in 137ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/index/New%20York,%20NY]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:12:10) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:37:10' and time <= '2010-11-18 13:47:10' and city = 'New York, NY') [0m
+Rendering forecast/index
+Completed in 151ms (View: 11, DB: 1) | 200 OK [http://localhost/forecast/index/New%20York,%20NY]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:12:33) [GET]
+  Parameters: {"id"=>"New York, NY"}
+
+SyntaxError (/Users/jsomers/relweather/app/models/forecast.rb:63: void value expression
+    if yesterdays.empty? return nil end
+                                   ^
+/Users/jsomers/relweather/app/models/forecast.rb:63: syntax error, unexpected keyword_nil, expecting keyword_then or ';' or '\n'
+    if yesterdays.empty? return nil end
+                                   ^
+/Users/jsomers/relweather/app/models/forecast.rb:67: syntax error, unexpected keyword_end, expecting $end):
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:13:11) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:38:11' and time <= '2010-11-18 13:48:11' and city = 'New York, NY') [0m
+Rendering forecast/index
+Completed in 673ms (View: 15, DB: 1) | 200 OK [http://localhost/forecast/index/New%20York,%20NY]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:13:13) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:38:13' and time <= '2010-11-18 13:48:13' and city = 'New York, NY') [0m
+Rendering forecast/index
+Completed in 145ms (View: 2, DB: 1) | 200 OK [http://localhost/forecast/index/New%20York,%20NY]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:13:26) [GET]
+  Parameters: {"id"=>"asdfnalskdfn"}
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/models/forecast.rb:62:in `relative'
+  app/controllers/forecast_controller.rb:10:in `index'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (65.4ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:14:39) [GET]
+  Parameters: {"id"=>"asdfnalskdfn"}
+Rendering forecast/index
+Completed in 103ms (View: 2, DB: 0) | 200 OK [http://localhost/forecast/index/asdfnalskdfn]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:14:40) [GET]
+  Parameters: {"id"=>"asdfnalskdfn"}
+Rendering forecast/index
+Completed in 106ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/index/asdfnalskdfn]
+
+
+Processing ForecastController#index (for 127.0.0.1 at 2010-11-19 08:14:45) [GET]
+  Parameters: {"id"=>"asdfnalskdfn"}
+Rendering forecast/index
+Completed in 176ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/index/asdfnalskdfn]
+
+
+Processing ForecastController#asdfnalskdfn (for 127.0.0.1 at 2010-11-19 08:14:47) [GET]
+
+ActionController::UnknownAction (No action responded to asdfnalskdfn. Actions: index, redirect_search, and search):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ForecastController#asdfnalskdfn (for 127.0.0.1 at 2010-11-19 08:14:48) [GET]
+
+ActionController::UnknownAction (No action responded to asdfnalskdfn. Actions: index, redirect_search, and search):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ForecastController#asdfnalskdfn (for 127.0.0.1 at 2010-11-19 08:14:49) [GET]
+
+ActionController::UnknownAction (No action responded to asdfnalskdfn. Actions: index, redirect_search, and search):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ForecastController#asdfnalskdfn (for 127.0.0.1 at 2010-11-19 08:14:49) [GET]
+
+ActionController::UnknownAction (No action responded to asdfnalskdfn. Actions: index, redirect_search, and search):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ForecastController#asdfnalskdfn (for 127.0.0.1 at 2010-11-19 08:14:49) [GET]
+
+ActionController::UnknownAction (No action responded to asdfnalskdfn. Actions: index, redirect_search, and search):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ForecastController#asdfnalskdfn (for 127.0.0.1 at 2010-11-19 08:14:49) [GET]
+
+ActionController::UnknownAction (No action responded to asdfnalskdfn. Actions: index, redirect_search, and search):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 08:16:36) [GET]
+Rendering forecast/search
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:16:39) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/New%20York,%20NY
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:16:39) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:41:39' and time <= '2010-11-18 13:51:39' and city = 'New York, NY') [0m
+
+ActionView::MissingTemplate (Missing template forecast/for.erb in view path app/views):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:16:49) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:41:49' and time <= '2010-11-18 13:51:49' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 193ms (View: 16, DB: 1) | 200 OK [http://localhost/forecast/for/New%20York,%20NY]
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 08:17:17) [GET]
+Rendering forecast/search
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:17:18) [GET]
+  Parameters: {"q"=>"New York, NY"}
+
+NoMethodError (undefined method `encode' for CGI:Class):
+  app/controllers/forecast_controller.rb:6:in `redirect_search'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (71.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:17:48) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/New+York%252C+NY
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:17:48) [GET]
+  Parameters: {"id"=>"New+York%2C+NY"}
+Rendering forecast/for
+Completed in 208ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/for/New+York%252C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:18:01) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:43:01' and time <= '2010-11-18 13:53:01' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 146ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/New%20York,%20NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:18:29) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:43:29' and time <= '2010-11-18 13:53:29' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 138ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/New%20York,%20NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:19:38) [GET]
+  Parameters: {"id"=>"10019"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:44:38' and time <= '2010-11-18 13:54:38' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 140ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/10019]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:19:46) [GET]
+  Parameters: {"id"=>"NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:44:46' and time <= '2010-11-18 13:54:46' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 141ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:19:49) [GET]
+  Parameters: {"id"=>"asdlkfnasdlfkn"}
+Rendering forecast/for
+Completed in 102ms (View: 2, DB: 0) | 200 OK [http://localhost/forecast/for/asdlkfnasdlfkn]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:19:53) [GET]
+  Parameters: {"id"=>"07901"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Summit, NJ') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('07901', 'Summit, NJ', 36, 75, 'Partly Cloudy', 'Wind: NW at 6 mph', '2010-11-19 13:19:53', '2010-11-19 13:19:53', '2010-11-19 13:19:53')[0m
+  [4;36;1mForecast Load (0.3ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:44:53' and time <= '2010-11-18 13:54:53' and city = 'Summit, NJ') [0m
+Rendering forecast/for
+Completed in 147ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/07901]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:19:54) [GET]
+  Parameters: {"id"=>"07901"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Summit, NJ') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:44:54' and time <= '2010-11-18 13:54:54' and city = 'Summit, NJ') [0m
+Rendering forecast/for
+Completed in 132ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/07901]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:19:55) [GET]
+  Parameters: {"id"=>"07901"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Summit, NJ') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:44:55' and time <= '2010-11-18 13:54:55' and city = 'Summit, NJ') [0m
+Rendering forecast/for
+Completed in 463ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/07901]
+  [4;36;1mForecast Load (0.7ms)[0m   [0;1mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:20:37) [GET]
+  Parameters: {"id"=>"07901"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Summit, NJ') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:45:37' and time <= '2010-11-18 13:55:37' and city = 'Summit, NJ') [0m
+Rendering forecast/for
+Completed in 147ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/for/07901]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:20:40) [GET]
+  Parameters: {"id"=>"10019"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:45:40' and time <= '2010-11-18 13:55:40' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 189ms (View: 2, DB: 1) | 200 OK [http://localhost/forecast/for/10019]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:21:16) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:46:16' and time <= '2010-11-18 13:56:16' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 146ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/New%20York,%20NY]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:22:50) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/some%20bullshit
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:22:50) [GET]
+  Parameters: {"id"=>"some bullshit"}
+Rendering forecast/for
+Completed in 170ms (View: 2, DB: 0) | 200 OK [http://localhost/forecast/for/some%20bullshit]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:22:58) [GET]
+  Parameters: {"id"=>"some bullshit"}
+Rendering forecast/for
+Completed in 101ms (View: 2, DB: 0) | 200 OK [http://localhost/forecast/for/some%20bullshit]
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 08:22:59) [GET]
+Rendering forecast/search
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:23:01) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/some+bullshit
+Completed in 79ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:23:01) [GET]
+  Parameters: {"id"=>"some+bullshit"}
+Rendering forecast/for
+Completed in 115ms (View: 2, DB: 0) | 200 OK [http://localhost/forecast/for/some+bullshit]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:23:27) [GET]
+  Parameters: {"q"=>"New York, NY"}
+
+NoMethodError (undefined method `encoding' for nil:NilClass):
+  /usr/local/lib/ruby/1.9.1/cgi/util.rb:16:in `unescape'
+  app/controllers/forecast_controller.rb:6:in `redirect_search'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (75.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:23:37) [GET]
+  Parameters: {"q"=>"New York, NY"}
+
+NoMethodError (undefined method `encoding' for nil:NilClass):
+  /usr/local/lib/ruby/1.9.1/cgi/util.rb:16:in `unescape'
+  app/controllers/forecast_controller.rb:6:in `redirect_search'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (73.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:24:34) [GET]
+  Parameters: {"q"=>"New York, NY"}
+
+NoMethodError (undefined method `gsub' for nil:NilClass):
+  app/controllers/forecast_controller.rb:6:in `redirect_search'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (64.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:24:45) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/New-York--NY
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:24:45) [GET]
+  Parameters: {"id"=>"New-York--NY"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:49:45' and time <= '2010-11-18 13:59:45' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 177ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/for/New-York--NY]
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 08:24:54) [GET]
+Rendering forecast/search
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:24:55) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/New-York,-NY
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:24:55) [GET]
+  Parameters: {"id"=>"New-York,-NY"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:49:55' and time <= '2010-11-18 13:59:55' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 181ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/New-York,-NY]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:25:03) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/new-york,-ny
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:25:03) [GET]
+  Parameters: {"id"=>"new-york,-ny"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:50:03' and time <= '2010-11-18 14:00:03' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 174ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/new-york,-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:25:46) [GET]
+  Parameters: {"id"=>"10019"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:50:46' and time <= '2010-11-18 14:00:46' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 160ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/10019]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:26:04) [GET]
+  Parameters: {"id"=>"10019"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:51:04' and time <= '2010-11-18 14:01:04' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 140ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/10019]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:26:05) [GET]
+  Parameters: {"id"=>"new-york,-ny"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:51:05' and time <= '2010-11-18 14:01:05' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 147ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/for/new-york,-ny]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:26:07) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/New%20York,%20NY
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:26:07) [GET]
+  Parameters: {"id"=>"New York, NY"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mForecast Load (0.2ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:51:07' and time <= '2010-11-18 14:01:07' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 220ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/for/New%20York,%20NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:27:14) [GET]
+  Parameters: {"id"=>"Brooklyn, NY"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Brooklyn, NY') [0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Brooklyn, NY', 'Brooklyn, NY', 41, 58, 'Partly Cloudy', 'Wind: NW at 11 mph', '2010-11-19 13:27:14', '2010-11-19 13:27:14', '2010-11-19 13:27:14')[0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:52:14' and time <= '2010-11-18 14:02:14' and city = 'Brooklyn, NY') [0m
+Rendering forecast/for
+Completed in 147ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/Brooklyn,%20NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:27:18) [GET]
+  Parameters: {"id"=>"Brooklyn, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Brooklyn, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:52:18' and time <= '2010-11-18 14:02:18' and city = 'Brooklyn, NY') [0m
+Rendering forecast/for
+Completed in 136ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/Brooklyn,%20NY]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Montreal, QC') [0m
+  [4;36;1mForecast Create (0.5ms)[0m   [0;1mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Montreal', 'Montreal, QC', 28, 69, 'Partly Cloudy', 'Wind: N at 7 mph', '2010-11-19 13:28:47', '2010-11-19 13:28:47', '2010-11-19 13:28:47')[0m
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:29:23) [GET]
+  Parameters: {"id"=>"Brooklyn, NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Brooklyn, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:54:23' and time <= '2010-11-18 14:04:23' and city = 'Brooklyn, NY') [0m
+Rendering forecast/for
+Completed in 134ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/for/Brooklyn,%20NY]
+
+
+Processing ApplicationController#for (for 127.0.0.1 at 2010-11-19 08:30:51) [GET]
+  Parameters: {"id"=>"New York, NY"}
+
+SyntaxError (/Users/jsomers/relweather/app/controllers/forecast_controller.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+      :controller => "forecast", 
+                    ^
+/Users/jsomers/relweather/app/controllers/forecast_controller.rb:7: syntax error, unexpected ',', expecting keyword_end
+      :controller => "forecast", 
+                                ^
+/Users/jsomers/relweather/app/controllers/forecast_controller.rb:8: syntax error, unexpected ',', expecting keyword_end
+      :action => "for", 
+                       ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (144.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#redirect_search (for 127.0.0.1 at 2010-11-19 08:30:54) [GET]
+  Parameters: {"q"=>"New York, NY"}
+
+SyntaxError (/Users/jsomers/relweather/app/controllers/forecast_controller.rb:7: syntax error, unexpected tASSOC, expecting keyword_end
+      :controller => "forecast", 
+                    ^
+/Users/jsomers/relweather/app/controllers/forecast_controller.rb:7: syntax error, unexpected ',', expecting keyword_end
+      :controller => "forecast", 
+                                ^
+/Users/jsomers/relweather/app/controllers/forecast_controller.rb:8: syntax error, unexpected ',', expecting keyword_end
+      :action => "for", 
+                       ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#redirect_search (for 127.0.0.1 at 2010-11-19 08:31:06) [GET]
+  Parameters: {"q"=>"New York, NY"}
+
+SyntaxError (/Users/jsomers/relweather/app/controllers/forecast_controller.rb:7: syntax error, unexpected tASSOC, expecting ')'
+      (:controller => "forecast", 
+                     ^
+/Users/jsomers/relweather/app/controllers/forecast_controller.rb:7: syntax error, unexpected ',', expecting ')'
+      (:controller => "forecast", 
+                                 ^
+/Users/jsomers/relweather/app/controllers/forecast_controller.rb:8: syntax error, unexpected ',', expecting ')'
+      :action => "for", 
+                       ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (66.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#redirect_search (for 127.0.0.1 at 2010-11-19 08:31:20) [GET]
+  Parameters: {"q"=>"New York, NY"}
+
+SyntaxError (/Users/jsomers/relweather/app/controllers/forecast_controller.rb:6: syntax error, unexpected tASSOC, expecting '}'
+    redirect_to { :controller => "forecast", :action => "for", 
+                                ^
+/Users/jsomers/relweather/app/controllers/forecast_controller.rb:6: syntax error, unexpected ',', expecting '}'
+    redirect_to { :controller => "forecast", :action => "for", 
+                                            ^
+/Users/jsomers/relweather/app/controllers/forecast_controller.rb:6: syntax error, unexpected ',', expecting '}'
+    redirect_to { :controller => "forecast", :action => "for", 
+                                                              ^):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (118.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:31:40) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/New-York--NY
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:31:40) [GET]
+  Parameters: {"id"=>"New-York--NY"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:56:40' and time <= '2010-11-18 14:06:40' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 158ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/New-York--NY]
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 08:32:10) [GET]
+Rendering forecast/search
+Completed in 4ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:32:13) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/new-york%23ny
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:32:13) [GET]
+  Parameters: {"id"=>"new-york#ny"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:57:13' and time <= '2010-11-18 14:07:13' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 168ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/for/new-york%23ny]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Montreal, QC') [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Springfield, MN') [0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Springfield MN', 'Springfield, MN', 34, 89, 'Clear', 'Wind: W at 13 mph', '2010-11-19 13:32:59', '2010-11-19 13:32:59', '2010-11-19 13:32:59')[0m
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:33:16) [GET]
+  Parameters: {"id"=>"new-york#ny"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:58:16' and time <= '2010-11-18 14:08:16' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 171ms (View: 1, DB: 0) | 200 OK [http://localhost/forecast/for/new-york%23ny]
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 08:33:17) [GET]
+Rendering forecast/search
+Completed in 85ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:33:18) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/new-york%23ny
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:33:18) [GET]
+  Parameters: {"id"=>"new-york#ny"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:58:18' and time <= '2010-11-18 14:08:18' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 135ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/new-york%23ny]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 08:33:27) [GET]
+  Parameters: {"q"=>"New York, NY"}
+Redirected to http://localhost:3000/forecast/for/new-york-ny
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=New+York%2C+NY]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:33:27) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 12:58:27' and time <= '2010-11-18 14:08:27' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 150ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/new-york-ny]
+  [4;35;1mForecast Load (0.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE ("forecasts"."city" = 'New York, NY') LIMIT 1[0m
+  [4;36;1mForecast Load (0.5ms)[0m   [0;1mSELECT * FROM "forecasts" WHERE ("forecasts"."city" = 'New York, NY') LIMIT 1[0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 21, 61, '2010-11-17 14:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.5ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 35, 61, '2010-11-17 15:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 38, 61, '2010-11-17 16:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.9ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 4, 61, '2010-11-17 17:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 70, 61, '2010-11-17 18:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 34, 61, '2010-11-17 19:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (1.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 100, 61, '2010-11-17 20:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 86, 61, '2010-11-17 21:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 59, 61, '2010-11-17 22:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.6ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 30, 61, '2010-11-17 23:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 29, 61, '2010-11-18 00:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 48, 61, '2010-11-18 01:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 13, 61, '2010-11-18 02:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 57, 61, '2010-11-18 03:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 16, 61, '2010-11-18 04:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 22, 61, '2010-11-18 05:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 100, 61, '2010-11-18 06:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.2ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 29, 61, '2010-11-18 07:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.8ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 33, 61, '2010-11-18 08:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 65, 61, '2010-11-18 09:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 79, 61, '2010-11-18 10:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 51, 61, '2010-11-18 11:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 64, 61, '2010-11-18 12:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 7, 61, '2010-11-18 13:36:21', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mForecast Create (0.5ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 72, 61, '2010-11-18 13:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 24, 61, '2010-11-18 14:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 95, 61, '2010-11-18 15:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 31, 61, '2010-11-18 16:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 94, 61, '2010-11-18 17:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 75, 61, '2010-11-18 18:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 2, 61, '2010-11-18 19:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 23, 61, '2010-11-18 20:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 94, 61, '2010-11-18 21:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (1.5ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 61, 61, '2010-11-18 22:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 39, 61, '2010-11-18 23:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 35, 61, '2010-11-19 00:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.5ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 96, 61, '2010-11-19 01:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 94, 61, '2010-11-19 02:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.5ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 35, 61, '2010-11-19 03:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 38, 61, '2010-11-19 04:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 57, 61, '2010-11-19 05:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 25, 61, '2010-11-19 06:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.8ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 44, 61, '2010-11-19 07:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 12, 61, '2010-11-19 08:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 46, 61, '2010-11-19 09:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 57, 61, '2010-11-19 10:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.3ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 70, 61, '2010-11-19 11:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 90, 61, '2010-11-19 12:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+  [4;36;1mForecast Create (0.4ms)[0m   [0;1mINSERT INTO "forecasts" ("city", "conditions", "created_at", "current_temperature", "humidity", "time", "updated_at", "wind", "zip_code") VALUES('New York, NY', 'Partly Cloudy', '2010-11-19 12:48:43', 90, 61, '2010-11-19 13:36:50', '2010-11-19 12:48:43', 'Wind: NW at 12 mph', 'New York, NY')[0m
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:36:53) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (0.8ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18 13:01:53' and time <= '2010-11-18 14:11:53' and city = 'New York, NY') [0m
+Rendering forecast/for
+Completed in 223ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/new-york-ny]
