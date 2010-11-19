@@ -13,15 +13,15 @@ It's hard to say exactly what "55 degrees" feels like. But everyone knows how ho
 	* <del>When someone queries a valid city for which there are no values in the db, write to db.</del>
 
 3. `rake` task (every hour):
-	* Finds all the cities represented in the db
-	* For each, runs a query to add current forecast to db (auto = true)
+	* <del>Finds all the cities represented in the db</del>
+	* <del>For each, runs a query to add current forecast to db (auto = true)</del>
 	
 4. <del>`diff` function should by default compare current temperature to yesterday's temperature *from the same time*</del>
 
 5. Interface:
-	* Basic diff on search gives temperature now compared to temperature yesterday *at this time*
-	* Drop all the rest of yesterday's values as JSON on page
-	* Present a range slider with 24 notches, one for each hour. Presets for morning, afternoon, and night. When someone selects a range, dynamically recalculates the diff using the average temperature for their selected range.
+	* <del>Basic diff on search gives temperature now compared to temperature yesterday *at this time*</del>
+	* <del>Drop all the rest of yesterday's values as JSON on page</del>
+	* <del>Present a range slider with 24 notches, one for each hour. When someone selects a range, dynamically recalculates the diff using the average temperature for their selected range.</del>
 
 6. Nice-to-haves:
 	* Compare wind chill, etc.
