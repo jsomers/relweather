@@ -2330,3 +2330,292 @@ Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:40:32) [GET]
 Rendering template within layouts/application
 Rendering forecast/for
 Completed in 194ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:45:04) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 289ms (View: 84, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mForecast Load (7.1ms)[0m   [0mSELECT * FROM "forecasts" [0m
+  [4;36;1mForecast Destroy (0.4ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 1[0m
+  [4;35;1mForecast Destroy (0.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 2[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 3[0m
+  [4;35;1mForecast Destroy (0.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 4[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 5[0m
+  [4;35;1mForecast Destroy (0.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 6[0m
+  [4;36;1mForecast Destroy (0.4ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 7[0m
+  [4;35;1mForecast Destroy (0.4ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 8[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 9[0m
+  [4;35;1mForecast Destroy (0.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 10[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 11[0m
+  [4;35;1mForecast Destroy (0.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 12[0m
+  [4;36;1mForecast Destroy (0.5ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 13[0m
+  [4;35;1mForecast Destroy (1.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 14[0m
+  [4;36;1mForecast Destroy (0.6ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 15[0m
+  [4;35;1mForecast Destroy (0.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 16[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 17[0m
+  [4;35;1mForecast Destroy (0.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 18[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 19[0m
+  [4;35;1mForecast Destroy (1.5ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 20[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 21[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 22[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 23[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 24[0m
+  [4;36;1mForecast Destroy (0.5ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 25[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 26[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 27[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 28[0m
+  [4;36;1mForecast Destroy (0.3ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 29[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 30[0m
+  [4;36;1mForecast Destroy (0.4ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 31[0m
+  [4;35;1mForecast Destroy (0.4ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 32[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 33[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 34[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 35[0m
+  [4;35;1mForecast Destroy (0.3ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 36[0m
+  [4;36;1mForecast Destroy (0.3ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 37[0m
+  [4;35;1mForecast Destroy (0.7ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 38[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 39[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 40[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 41[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 42[0m
+  [4;36;1mForecast Destroy (0.4ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 43[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 44[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 45[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 46[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 47[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 48[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 49[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 50[0m
+  [4;36;1mForecast Destroy (0.5ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 51[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 52[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 53[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 54[0m
+  [4;36;1mForecast Destroy (0.2ms)[0m   [0;1mDELETE FROM "forecasts" WHERE "id" = 55[0m
+  [4;35;1mForecast Destroy (0.2ms)[0m   [0mDELETE FROM "forecasts" WHERE "id" = 56[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Create (0.7ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('New York, New York', 'New York, NY', 45, 43, 'Partly Cloudy', 'NW at 15 mph', '2010-11-19 15:48:44', '2010-11-19 15:48:44', '2010-11-19 15:48:43')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Los Angeles, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Los Angeles, California', 'Los Angeles, CA', 58, 79, 'Cloudy', 'S at 2 mph', '2010-11-19 15:48:44', '2010-11-19 15:48:44', '2010-11-19 15:48:44')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Chicago, IL') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Chicago, Illinois', 'Chicago, IL', 37, 71, 'Mostly Cloudy', 'S at 15 mph', '2010-11-19 15:48:44', '2010-11-19 15:48:44', '2010-11-19 15:48:44')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Houston, TX') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Houston, Texas', 'Houston, TX', 54, 79, 'Sunny', 'E at 5 mph', '2010-11-19 15:48:44', '2010-11-19 15:48:44', '2010-11-19 15:48:44')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Phoenix, AZ') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Phoenix, Arizona', 'Phoenix, AZ', 58, 30, 'Partly Cloudy', 'E at 5 mph', '2010-11-19 15:48:44', '2010-11-19 15:48:44', '2010-11-19 15:48:44')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Philadelphia, PA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Philadelphia, Pennsylvania', 'Philadelphia, PA', 48, 48, 'Partly Cloudy', 'NW at 8 mph', '2010-11-19 15:48:44', '2010-11-19 15:48:44', '2010-11-19 15:48:44')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'San Antonio, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('San Antonio, Texas', 'San Antonio, TX', 55, 59, 'Sunny', 'N at 0 mph', '2010-11-19 15:48:45', '2010-11-19 15:48:45', '2010-11-19 15:48:45')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'San Diego, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('San Diego, California', 'San Diego, CA', 61, 67, 'Cloudy', 'SW at 4 mph', '2010-11-19 15:48:45', '2010-11-19 15:48:45', '2010-11-19 15:48:45')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Dallas, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Dallas, Texas', 'Dallas, TX', 47, 81, 'Sunny', 'S at 9 mph', '2010-11-19 15:48:45', '2010-11-19 15:48:45', '2010-11-19 15:48:45')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'San Jose, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('San Jose, California', 'San Jose, CA', 53, 80, 'Cloudy', 'SE at 7 mph', '2010-11-19 15:48:45', '2010-11-19 15:48:45', '2010-11-19 15:48:45')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Detroit, MI') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Detroit, Michigan', 'Detroit, MI', 39, 71, 'Partly Cloudy', 'S at 7 mph', '2010-11-19 15:48:45', '2010-11-19 15:48:45', '2010-11-19 15:48:45')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'San Francisco, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('San Francisco, California', 'San Francisco, CA', 53, 85, 'Cloudy', 'S at 7 mph', '2010-11-19 15:48:45', '2010-11-19 15:48:45', '2010-11-19 15:48:45')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Jacksonville, FL') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Jacksonville, Florida', 'Jacksonville, FL', 66, 60, 'Sunny', 'N at 8 mph', '2010-11-19 15:48:45', '2010-11-19 15:48:45', '2010-11-19 15:48:45')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Indianapolis, IN') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Indianapolis, Indiana', 'Indianapolis, IN', 36, 85, 'Cloudy', 'S at 6 mph', '2010-11-19 15:48:46', '2010-11-19 15:48:46', '2010-11-19 15:48:46')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Austin, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Austin, Texas', 'Austin, TX', 51, 68, 'Partly Cloudy', 'S at 2 mph', '2010-11-19 15:48:46', '2010-11-19 15:48:46', '2010-11-19 15:48:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Columbus, OH') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Columbus, Ohio', 'Columbus, OH', 38, 88, 'Partly Cloudy', 'S at 7 mph', '2010-11-19 15:48:46', '2010-11-19 15:48:46', '2010-11-19 15:48:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Fort Worth, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Fort Worth, Texas', 'Fort Worth, TX', 50, 75, 'Sunny', 'S at 9 mph', '2010-11-19 15:48:46', '2010-11-19 15:48:46', '2010-11-19 15:48:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Charlotte, NC') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Charlotte, North Carolina', 'Charlotte, NC', 54, 53, 'Sunny', 'E at 8 mph', '2010-11-19 15:48:46', '2010-11-19 15:48:46', '2010-11-19 15:48:46')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Memphis, TN') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Memphis, Tennessee', 'Memphis, TN', 50, 77, 'Cloudy', 'SE at 7 mph', '2010-11-19 15:48:46', '2010-11-19 15:48:46', '2010-11-19 15:48:46')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Boston, MA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Boston, Massachusetts', 'Boston, MA', 44, 45, 'Partly Cloudy', 'NW at 17 mph', '2010-11-19 15:48:47', '2010-11-19 15:48:47', '2010-11-19 15:48:47')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Baltimore, MD') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Baltimore, Maryland', 'Baltimore, MD', 49, 48, 'Partly Cloudy', 'NW at 10 mph', '2010-11-19 15:48:47', '2010-11-19 15:48:47', '2010-11-19 15:48:47')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'El Paso, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('El Paso, Texas', 'El Paso, TX', 48, 30, 'Sunny', 'NE at 4 mph', '2010-11-19 15:48:47', '2010-11-19 15:48:47', '2010-11-19 15:48:47')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Seattle, WA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Seattle, Washington', 'Seattle, WA', 42, 85, 'Cloudy', 'N at 0 mph', '2010-11-19 15:48:47', '2010-11-19 15:48:47', '2010-11-19 15:48:47')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Denver, CO') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Denver, Colorado', 'Denver, CO', 47, 26, 'Partly Cloudy', 'S at 1 mph', '2010-11-19 15:48:48', '2010-11-19 15:48:48', '2010-11-19 15:48:48')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Nashville, TN') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Nashville, Tennessee', 'Nashville, TN', 47, 75, 'Mostly Cloudy', 'S at 6 mph', '2010-11-19 15:48:48', '2010-11-19 15:48:48', '2010-11-19 15:48:48')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Milwaukee, WI') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Milwaukee, Wisconsin', 'Milwaukee, WI', 35, 73, 'Partly Cloudy', 'S at 13 mph', '2010-11-19 15:48:48', '2010-11-19 15:48:48', '2010-11-19 15:48:48')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Washington, DC') [0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Washington, District of Columbia', 'Washington, DC', 51, 40, 'Partly Cloudy', 'NW at 14 mph', '2010-11-19 15:48:48', '2010-11-19 15:48:48', '2010-11-19 15:48:48')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Las Vegas, NV') [0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Las Vegas, Nevada', 'Las Vegas, NV', 50, 45, 'Mostly Cloudy', 'W at 5 mph', '2010-11-19 15:48:48', '2010-11-19 15:48:48', '2010-11-19 15:48:48')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Louisville, KY') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Louisville, Kentucky', 'Louisville, KY', 46, 74, 'Cloudy', 'S at 5 mph', '2010-11-19 15:48:49', '2010-11-19 15:48:49', '2010-11-19 15:48:49')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Portland, OR') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Portland, Oregon', 'Portland, OR', 40, 88, 'Mostly Cloudy', 'SE at 10 mph', '2010-11-19 15:48:49', '2010-11-19 15:48:49', '2010-11-19 15:48:49')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Oklahoma City, OK') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Oklahoma City, Oklahoma', 'Oklahoma City, OK', 48, 61, 'Sunny', 'S at 20 mph', '2010-11-19 15:48:49', '2010-11-19 15:48:49', '2010-11-19 15:48:49')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Tucson, Arizona', 'Tucson, AZ', 57, 27, 'Sunny', 'S at 5 mph', '2010-11-19 15:48:49', '2010-11-19 15:48:49', '2010-11-19 15:48:49')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Atlanta, GA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Atlanta, Georgia', 'Atlanta, GA', 58, 59, 'Sunny', 'E at 2 mph', '2010-11-19 15:48:49', '2010-11-19 15:48:49', '2010-11-19 15:48:49')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Albuquerque, NM') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Albuquerque, New Mexico', 'Albuquerque, NM', 41, 30, 'Sunny', 'N at 3 mph', '2010-11-19 15:48:49', '2010-11-19 15:48:49', '2010-11-19 15:48:49')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Kansas City, MO') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Kansas City, Missouri', 'Kansas City, MO', 44, 72, 'Sunny', 'S at 19 mph', '2010-11-19 15:48:49', '2010-11-19 15:48:49', '2010-11-19 15:48:49')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Fresno, CA') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Fresno, California', 'Fresno, CA', 50, 86, 'Cloudy', 'NW at 10 mph', '2010-11-19 15:48:50', '2010-11-19 15:48:50', '2010-11-19 15:48:50')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Mesa, AZ') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Mesa, Arizona', 'Mesa, AZ', 53, 33, 'Partly Cloudy', 'SE at 3 mph', '2010-11-19 15:48:50', '2010-11-19 15:48:50', '2010-11-19 15:48:50')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Sacramento, CA') [0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Sacramento, California', 'Sacramento, CA', 51, 91, 'Cloudy', 'S at 4 mph', '2010-11-19 15:48:50', '2010-11-19 15:48:50', '2010-11-19 15:48:50')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Long Beach, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Long Beach, California', 'Long Beach, CA', 58, 76, 'Cloudy', 'N at 0 mph', '2010-11-19 15:48:51', '2010-11-19 15:48:51', '2010-11-19 15:48:51')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Omaha, NE') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Omaha, Nebraska', 'Omaha, NE', 40, 76, 'Mostly Cloudy', 'SW at 7 mph', '2010-11-19 15:48:51', '2010-11-19 15:48:51', '2010-11-19 15:48:51')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Virginia Beach, VA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Virginia Beach, Virginia', 'Virginia Beach, VA', 53, 51, 'Partly Cloudy', 'N at 18 mph', '2010-11-19 15:48:51', '2010-11-19 15:48:51', '2010-11-19 15:48:51')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Miami, FL') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Miami, Florida', 'Miami, FL', 80, 48, 'Partly Cloudy', 'NE at 21 mph', '2010-11-19 15:48:51', '2010-11-19 15:48:51', '2010-11-19 15:48:51')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Cleveland, OH') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Cleveland, Ohio', 'Cleveland, OH', 43, 68, 'Sunny', 'S at 6 mph', '2010-11-19 15:48:51', '2010-11-19 15:48:51', '2010-11-19 15:48:51')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Oakland, CA') [0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Oakland, California', 'Oakland, CA', 53, 86, 'Cloudy', 'S at 8 mph', '2010-11-19 15:48:51', '2010-11-19 15:48:51', '2010-11-19 15:48:51')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Raleigh, NC') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Raleigh, North Carolina', 'Raleigh, NC', 52, 50, 'Sunny', 'N at 7 mph', '2010-11-19 15:48:51', '2010-11-19 15:48:51', '2010-11-19 15:48:51')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Colorado Springs, CO') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Colorado Springs, Colorado', 'Colorado Springs, CO', 57, 9, 'Sunny', 'W at 2 mph', '2010-11-19 15:48:52', '2010-11-19 15:48:52', '2010-11-19 15:48:52')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tulsa, OK') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Tulsa, Oklahoma', 'Tulsa, OK', 45, 80, 'Partly Cloudy', 'S at 18 mph', '2010-11-19 15:48:52', '2010-11-19 15:48:52', '2010-11-19 15:48:52')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Minneapolis, MN') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Minneapolis, Minnesota', 'Minneapolis, MN', 37, 79, 'Cloudy', 'SW at 9 mph', '2010-11-19 15:48:52', '2010-11-19 15:48:52', '2010-11-19 15:48:52')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Arlington, TX') [0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Arlington, Texas', 'Arlington, TX', 48, 83, 'Sunny', 'S at 11 mph', '2010-11-19 15:48:52', '2010-11-19 15:48:52', '2010-11-19 15:48:52')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Honolulu, HI') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Honolulu, Hawaii', 'Honolulu, HI', 69, 93, 'Partly Cloudy', 'N at 0 mph', '2010-11-19 15:48:53', '2010-11-19 15:48:53', '2010-11-19 15:48:53')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Wichita, KS') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Wichita, Kansas', 'Wichita, KS', 44, 70, 'Mostly Cloudy', 'S at 23 mph', '2010-11-19 15:48:53', '2010-11-19 15:48:53', '2010-11-19 15:48:53')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'St. Louis, MO') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('St Louis, Missouri', 'St. Louis, MO', 46, 72, 'Partly Cloudy', 'S at 11 mph', '2010-11-19 15:48:53', '2010-11-19 15:48:53', '2010-11-19 15:48:53')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New Orleans, LA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('New Orleans, Louisiana', 'New Orleans, LA', 57, 78, 'Cloudy', 'N at 5 mph', '2010-11-19 15:48:53', '2010-11-19 15:48:53', '2010-11-19 15:48:53')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tampa, FL') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Tampa, Florida', 'Tampa, FL', 71, 57, 'Sunny', 'NE at 11 mph', '2010-11-19 15:48:53', '2010-11-19 15:48:53', '2010-11-19 15:48:53')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Santa Ana, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Santa Ana, California', 'Santa Ana, CA', 60, 74, 'Cloudy', 'S at 2 mph', '2010-11-19 15:48:54', '2010-11-19 15:48:54', '2010-11-19 15:48:54')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Anaheim, CA') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Anaheim, California', 'Anaheim, CA', 60, 74, 'Cloudy', 'S at 2 mph', '2010-11-19 15:48:54', '2010-11-19 15:48:54', '2010-11-19 15:48:54')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Cincinnati, OH') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Cincinnati, Ohio', 'Cincinnati, OH', 38, 88, 'Cloudy', 'S at 2 mph', '2010-11-19 15:48:54', '2010-11-19 15:48:54', '2010-11-19 15:48:54')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Bakersfield, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Bakersfield, California', 'Bakersfield, CA', 49, 87, 'Sunny', 'N at 11 mph', '2010-11-19 15:48:54', '2010-11-19 15:48:54', '2010-11-19 15:48:54')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Aurora, CO') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Aurora, Colorado', 'Aurora, CO', 45, 29, 'Mostly Cloudy', 'SE at 3 mph', '2010-11-19 15:48:54', '2010-11-19 15:48:54', '2010-11-19 15:48:54')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Toledo, OH') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Toledo, Ohio', 'Toledo, OH', 39, 74, 'Sunny', 'S at 8 mph', '2010-11-19 15:48:54', '2010-11-19 15:48:54', '2010-11-19 15:48:54')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Pittsburgh, PA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Pittsburgh, Pennsylvania', 'Pittsburgh, PA', 42, 68, 'Partly Cloudy', 'SW at 4 mph', '2010-11-19 15:48:55', '2010-11-19 15:48:55', '2010-11-19 15:48:55')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Riverside, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Riverside, California', 'Riverside, CA', 55, 82, 'Haze', 'NW at 3 mph', '2010-11-19 15:48:55', '2010-11-19 15:48:55', '2010-11-19 15:48:55')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Lexington, KY') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Lexington, Kentucky', 'Lexington, KY', 46, 73, 'Cloudy', 'S at 6 mph', '2010-11-19 15:48:55', '2010-11-19 15:48:55', '2010-11-19 15:48:55')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Stockton, CA') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Stockton, California', 'Stockton, CA', 46, 93, 'Partly Cloudy', 'SE at 3 mph', '2010-11-19 15:48:55', '2010-11-19 15:48:55', '2010-11-19 15:48:55')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Corpus Christi, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Corpus Christi, Texas', 'Corpus Christi, TX', 64, 74, 'Sunny', 'N at 7 mph', '2010-11-19 15:48:56', '2010-11-19 15:48:56', '2010-11-19 15:48:56')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Anchorage, AK') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Anchorage, Alaska', 'Anchorage, AK', 14, 76, 'Mostly Cloudy', 'E at 5 mph', '2010-11-19 15:48:56', '2010-11-19 15:48:56', '2010-11-19 15:48:56')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Saint Paul, MN') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('St Paul, Minnesota', 'Saint Paul, MN', 37, 79, 'Cloudy', 'S at 5 mph', '2010-11-19 15:48:56', '2010-11-19 15:48:56', '2010-11-19 15:48:56')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Newark, NJ') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Newark, New Jersey', 'Newark, NJ', 45, 42, 'Mostly Cloudy', 'NW at 17 mph', '2010-11-19 15:48:56', '2010-11-19 15:48:56', '2010-11-19 15:48:56')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Plano, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Plano, Texas', 'Plano, TX', 45, 94, 'Partly Cloudy', 'S at 8 mph', '2010-11-19 15:48:56', '2010-11-19 15:48:56', '2010-11-19 15:48:56')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Buffalo, NY') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Buffalo, New York', 'Buffalo, NY', 38, 58, 'Partly Cloudy', 'SW at 1 mph', '2010-11-19 15:48:56', '2010-11-19 15:48:56', '2010-11-19 15:48:56')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Henderson, NV') [0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Henderson, Nevada', 'Henderson, NV', 52, 42, 'Sunny', 'S at 4 mph', '2010-11-19 15:48:56', '2010-11-19 15:48:56', '2010-11-19 15:48:56')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Fort Wayne, IN') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Fort Wayne, Indiana', 'Fort Wayne, IN', 39, 78, 'Partly Cloudy', 'S at 13 mph', '2010-11-19 15:48:57', '2010-11-19 15:48:57', '2010-11-19 15:48:57')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Greensboro, NC') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Greensboro, North Carolina', 'Greensboro, NC', 50, 55, 'Sunny', 'NE at 5 mph', '2010-11-19 15:48:57', '2010-11-19 15:48:57', '2010-11-19 15:48:57')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Lincoln, NE') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Lincoln, Nebraska', 'Lincoln, NE', 39, 75, 'Sunny', 'W at 5 mph', '2010-11-19 15:48:57', '2010-11-19 15:48:57', '2010-11-19 15:48:57')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Glendale, AZ') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Glendale, Arizona', 'Glendale, AZ', 53, 35, 'Partly Cloudy', 'SE at 2 mph', '2010-11-19 15:48:57', '2010-11-19 15:48:57', '2010-11-19 15:48:57')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Chandler, AZ') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Chandler, Arizona', 'Chandler, AZ', 52, 33, 'Partly Cloudy', 'SE at 5 mph', '2010-11-19 15:48:57', '2010-11-19 15:48:57', '2010-11-19 15:48:57')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'St. Petersburg, FL') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('St Petersburg, Florida', 'St. Petersburg, FL', 69, 58, 'Partly Cloudy', 'NE at 7 mph', '2010-11-19 15:48:57', '2010-11-19 15:48:57', '2010-11-19 15:48:57')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Jersey City, NJ') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Jersey City, New Jersey', 'Jersey City, NJ', 44, 43, 'Partly Cloudy', 'NW at 15 mph', '2010-11-19 15:48:58', '2010-11-19 15:48:58', '2010-11-19 15:48:58')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Scottsdale, AZ') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Scottsdale, Arizona', 'Scottsdale, AZ', 54, 33, 'Partly Cloudy', 'E at 2 mph', '2010-11-19 15:48:58', '2010-11-19 15:48:58', '2010-11-19 15:48:58')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Orlando, FL') [0m
+  [4;35;1mForecast Create (0.6ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Orlando, Florida', 'Orlando, FL', 72, 53, 'Sunny', 'NE at 7 mph', '2010-11-19 15:48:58', '2010-11-19 15:48:58', '2010-11-19 15:48:58')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Madison, WI') [0m
+  [4;35;1mForecast Create (0.7ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Madison, Wisconsin', 'Madison, WI', 35, 82, 'Cloudy', 'S at 17 mph', '2010-11-19 15:48:58', '2010-11-19 15:48:58', '2010-11-19 15:48:58')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Norfolk, VA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Norfolk, Virginia', 'Norfolk, VA', 52, 51, 'Partly Cloudy', 'N at 15 mph', '2010-11-19 15:48:58', '2010-11-19 15:48:58', '2010-11-19 15:48:58')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Birmingham, AL') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Birmingham, Alabama', 'Birmingham, AL', 57, 66, 'Sunny', 'E at 6 mph', '2010-11-19 15:48:58', '2010-11-19 15:48:58', '2010-11-19 15:48:58')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Durham, NC') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Durham, North Carolina', 'Durham, NC', 52, 51, 'Sunny', 'N at 6 mph', '2010-11-19 15:48:59', '2010-11-19 15:48:59', '2010-11-19 15:48:59')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Laredo, TX') [0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Laredo, Texas', 'Laredo, TX', 60, 56, 'Sunny', 'S at 7 mph', '2010-11-19 15:48:59', '2010-11-19 15:48:59', '2010-11-19 15:48:59')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Lubbock, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Lubbock, Texas', 'Lubbock, TX', 50, 39, 'Sunny', 'W at 12 mph', '2010-11-19 15:48:59', '2010-11-19 15:48:59', '2010-11-19 15:48:59')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Baton Rouge, LA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Baton Rouge, Louisiana', 'Baton Rouge, LA', 54, 84, 'Cloudy', 'NE at 5 mph', '2010-11-19 15:48:59', '2010-11-19 15:48:59', '2010-11-19 15:48:59')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'North Las Vegas, NV') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('North Las Vegas, Nevada', 'North Las Vegas, NV', 51, 42, 'Sunny', 'N at 0 mph', '2010-11-19 15:48:59', '2010-11-19 15:48:59', '2010-11-19 15:48:59')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Chula Vista, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Chula Vista, California', 'Chula Vista, CA', 55, 80, 'Cloudy', 'SE at 1 mph', '2010-11-19 15:48:59', '2010-11-19 15:48:59', '2010-11-19 15:48:59')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Chesapeake, VA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Chesapeake, Virginia', 'Chesapeake, VA', 52, 55, 'Sunny', 'N at 12 mph', '2010-11-19 15:48:59', '2010-11-19 15:48:59', '2010-11-19 15:48:59')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Gilbert, AZ') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Gilbert, Arizona', 'Gilbert, AZ', 52, 33, 'Partly Cloudy', 'SE at 5 mph', '2010-11-19 15:49:00', '2010-11-19 15:49:00', '2010-11-19 15:49:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Garland, TX') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Garland, Texas', 'Garland, TX', 45, 91, 'Partly Cloudy', 'S at 7 mph', '2010-11-19 15:49:00', '2010-11-19 15:49:00', '2010-11-19 15:49:00')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Reno, NV') [0m
+  [4;35;1mForecast Create (0.3ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Reno, Nevada', 'Reno, NV', 50, 40, 'Mostly Cloudy', 'SE at 27 mph', '2010-11-19 15:49:00', '2010-11-19 15:49:00', '2010-11-19 15:49:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Hialeah, FL') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Hialeah, Florida', 'Hialeah, FL', 79, 49, 'Partly Cloudy', 'NE at 18 mph', '2010-11-19 15:49:00', '2010-11-19 15:49:00', '2010-11-19 15:49:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Arlington, VA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Arlington, Virginia', 'Arlington, VA', 51, 40, 'Partly Cloudy', 'NW at 14 mph', '2010-11-19 15:49:00', '2010-11-19 15:49:00', '2010-11-19 15:49:00')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Irvine, CA') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Irvine, California', 'Irvine, CA', 62, 67, 'Cloudy', 'N at 0 mph', '2010-11-19 15:49:00', '2010-11-19 15:49:00', '2010-11-19 15:49:00')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Rochester, NY') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Rochester, New York', 'Rochester, NY', 39, 61, 'Partly Cloudy', 'NW at 8 mph', '2010-11-19 15:49:01', '2010-11-19 15:49:01', '2010-11-19 15:49:01')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Akron, OH') [0m
+  [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Akron, Ohio', 'Akron, OH', 41, 70, 'Sunny', 'SW at 7 mph', '2010-11-19 15:49:01', '2010-11-19 15:49:01', '2010-11-19 15:49:01')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Boise, ID') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Boise, Idaho', 'Boise, ID', 37, 76, 'Cloudy', 'N at 3 mph', '2010-11-19 15:49:01', '2010-11-19 15:49:01', '2010-11-19 15:49:01')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "forecasts" [0m
+  [4;36;1mForecast Load (11.3ms)[0m   [0;1mSELECT * FROM "forecasts" [0m
