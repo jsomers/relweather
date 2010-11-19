@@ -1,7 +1,96 @@
+<style type="text/css">
+	#forecast span {
+		font-weight: bold;
+	}
+	
+	#range {
+		width: 500px;
+	}
+</style>
+
 <script type="text/javascript">
 	$(document).ready(function() {
-		//
+		forecast = <%= @forecast %>;
+		base_time = forecast[2];
+		yesterdays = forecast[1];
+		forecast = forecast[0];
+		
+		Array.prototype.sum = function() {
+		  return (! this.length) ? 0 : this.slice(1).sum() +
+		      ((typeof this[0] == 'number') ? this[0] : 0);
+		};
+		
+		temps_within_range = function(start, end) {
+			var keep = [];
+			for (y in yesterdays) {
+				var y = yesterdays[y];
+				if (y[0] >= start && y[0] <= end) {
+					keep.push(y[1]);
+				}
+			};
+			return keep;
+		}
+		
+		diff = function(range) {
+			var current = forecast.current_temperature;
+			var ts = temps_within_range(range[0], range[1]);
+			var avg = ts.sum() / ts.length;
+			var mag = Math.abs(avg - current);
+			mag = Math.round(mag * 100) / 100;
+			dir = (current >= avg ? "warmer" : "colder");
+			$("#mag").html(mag);
+			$("#dir").html(dir);
+			$("#upshot").attr("class", dir);
+		}
+		
+		default_range = function() {
+			var day = 60 * 60 * 24;
+			return [forecast.time - day - 35 * 60, forecast.time - day + 35 * 60];
+		}
+		
+		init = function() {
+			for (e in forecast) {
+				$("#" + e).html(forecast[e]);
+			};
+			diff(default_range());
+		}; init()
+		
+		time_for_notch = function(n) {
+			var t = base_time;
+			var hr = 60 * 60;
+			return t + hr * n;
+		};
+		
+		display_time = function(s, e) {
+			s_to_str = (s >= 12 ? s % 12 + "pm" : s + "am").replace("0am", "12am").replace("0pm", "12pm");
+			e_to_str = (e >= 12 ? e % 12 + "pm" : e + "am").replace("0am", "12am").replace("0pm", "12pm");;
+			$("#range-in-words").html("between <b>" + s_to_str + "</b> and <b>" + e_to_str + "</b> yesterday")
+		};
+
+		$("#range").slider({
+			range: true,
+			min: 0,
+			max: 24,
+			step: 1,
+			values: [8, 17],
+			slide: function(event, ui) {
+				diff([time_for_notch(ui.values[0]), time_for_notch(ui.values[1])]);
+				display_time(ui.values[0], ui.values[1]);
+			}
+		});
 	})
 </script>
 
-<%= @forecast %>
+<ul id="forecast">
+	<li>City: <span id="city"></span></li>
+	<li>Conditions: <span id="conditions"></span></li>
+	<li>Current temperature: <span id="current_temperature"></span><strong>°F</strong></li>
+	<li>Humidity: <span id="humidity"></span><strong>%</strong></li>
+	<li>Wind: <span id="wind"></span></li>
+</ul>
+
+<div id="range"></div>
+
+<div id="upshot" class="warmer">
+	Right now, it's <span id="mag"></span> degrees <span id="dir"></span> than it was <span id="range-in-words">around the same time yesterday</span>.
+</div>

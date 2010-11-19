@@ -28,7 +28,7 @@ class Forecast < ActiveRecord::Base
         :current_temperature => el(current, "temp_f"),
         :humidity => el(current, "humidity")[/Humidity: (\d+)%/, 1],
         :conditions => el(current, "condition"),
-        :wind => el(current, "wind_condition")
+        :wind => el(current, "wind_condition").gsub("Wind: ", "")
       }
       
       if !Forecast.have_for_city(c) or auto
@@ -61,7 +61,8 @@ class Forecast < ActiveRecord::Base
     t = Forecast.get(q)
     yesterdays = if t then Forecast.all_within_window_for_city(Date.yesterday, Date.today, t[:city]) else [] end
     if yesterdays.empty? then return nil end
-    [t, yesterdays]
+    t[:time] = t[:time].to_i
+    [t, yesterdays, (Date.yesterday + 0.minutes).to_i]
   end
 
 end

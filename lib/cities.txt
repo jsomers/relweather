@@ -1,0 +1,100 @@
+New York, New York
+Los Angeles, California
+Chicago, Illinois
+Houston, Texas
+Phoenix, Arizona
+Philadelphia, Pennsylvania
+San Antonio, Texas
+San Diego, California
+Dallas, Texas
+San Jose, California
+Detroit, Michigan
+San Francisco, California
+Jacksonville, Florida
+Indianapolis, Indiana
+Austin, Texas
+Columbus, Ohio
+Fort Worth, Texas
+Charlotte, North Carolina
+Memphis, Tennessee
+Boston, Massachusetts
+Baltimore, Maryland
+El Paso, Texas
+Seattle, Washington
+Denver, Colorado
+Nashville, Tennessee
+Milwaukee, Wisconsin
+Washington, District of Columbia
+Las Vegas, Nevada
+Louisville, Kentucky
+Portland, Oregon
+Oklahoma City, Oklahoma
+Tucson, Arizona
+Atlanta, Georgia
+Albuquerque, New Mexico
+Kansas City, Missouri
+Fresno, California
+Mesa, Arizona
+Sacramento, California
+Long Beach, California
+Omaha, Nebraska
+Virginia Beach, Virginia
+Miami, Florida
+Cleveland, Ohio
+Oakland, California
+Raleigh, North Carolina
+Colorado Springs, Colorado
+Tulsa, Oklahoma
+Minneapolis, Minnesota
+Arlington, Texas
+Honolulu, Hawaii
+Wichita, Kansas
+St Louis, Missouri
+New Orleans, Louisiana
+Tampa, Florida
+Santa Ana, California
+Anaheim, California
+Cincinnati, Ohio
+Bakersfield, California
+Aurora, Colorado
+Toledo, Ohio
+Pittsburgh, Pennsylvania
+Riverside, California
+Lexington, Kentucky
+Stockton, California
+Corpus Christi, Texas
+Anchorage, Alaska
+St Paul, Minnesota
+Newark, New Jersey
+Plano, Texas
+Buffalo, New York
+Henderson, Nevada
+Fort Wayne, Indiana
+Greensboro, North Carolina
+Lincoln, Nebraska
+Glendale, Arizona
+Chandler, Arizona
+St Petersburg, Florida
+Jersey City, New Jersey
+Scottsdale, Arizona
+Orlando, Florida
+Madison, Wisconsin
+Norfolk, Virginia
+Birmingham, Alabama
+WinstonSalem, North Carolina
+Durham, North Carolina
+Laredo, Texas
+Lubbock, Texas
+Baton Rouge, Louisiana
+North Las Vegas, Nevada
+Chula Vista, California
+Chesapeake, Virginia
+Gilbert, Arizona
+Garland, Texas
+Reno, Nevada
+Hialeah, Florida
+Arlington, Virginia
+Irvine, California
+Rochester, New York
+Akron, Ohio
+Boise, Idaho

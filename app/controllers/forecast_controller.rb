@@ -8,6 +8,16 @@ class ForecastController < ApplicationController
   end
   
   def for
-    @forecast = Forecast.relative(params[:id].gsub("-", " "))
+    f = Forecast.relative(params[:id].gsub("-", " "))
+    if f.nil?
+      render :text => <<-eof
+        You're the first person to search for the forecast in this area.
+        Unfortunately, that means we don't have any data from yesterday to compare your forecast to. <br/><br/>
+        But our server has been notified, and we'll have some results for you tomorrow. Do come back!
+      eof
+      return false
+    else
+      @forecast = f.to_json
+    end
   end
 end

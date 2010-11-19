@@ -1447,3 +1447,886 @@ Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 08:51:19) [GET]
 Rendering template within layouts/application
 Rendering forecast/for
 Completed in 185ms (View: 18, DB: 8) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:20:17) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (10.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 409ms (View: 60, DB: 16) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:21:17) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (6.0ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 320ms (View: 11, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:21:33) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 190ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:21:42) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 27713ms (View: 18, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:22:11) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 1721ms (View: 4, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:22:33) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 260ms (View: 13, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:23:21) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 182ms (View: 13, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:29:15) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 203ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:30:01) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (4.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 372ms (View: 11, DB: 5) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:30:07) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.1ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 188ms (View: 13, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:30:20) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 184ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:30:34) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (6.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 278ms (View: 95, DB: 7) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:30:49) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 185ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:30:52) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 202ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:31:11) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 212ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:31:28) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 300ms (View: 13, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:31:36) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 192ms (View: 3, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:31:46) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 185ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:33:26) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.8ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 272ms (View: 95, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:35:23) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 210ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:35:55) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 201ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:38:46) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 209ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:43:49) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.0ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 187ms (View: 15, DB: 5) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:43:51) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.0ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 197ms (View: 3, DB: 5) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:46:10) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 255ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:46:34) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (4.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 284ms (View: 11, DB: 5) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:46:58) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 183ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:47:00) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 179ms (View: 3, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:47:28) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 199ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:49:04) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 188ms (View: 3, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:49:38) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (4.9ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 178ms (View: 3, DB: 5) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:49:58) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 230ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:50:44) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 268ms (View: 96, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:51:03) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 183ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:51:38) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 280ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:52:47) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 191ms (View: 16, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:52:55) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 189ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:53:04) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 207ms (View: 13, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 09:53:50) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.7ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 201ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:01:02) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (4.8ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 301ms (View: 11, DB: 5) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:07:52) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (4.9ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+
+ActionView::TemplateError (undefined method `stylesheet_include_tag' for #<ActionView::Base:0x3308afc>) on line #13 of app/views/layouts/application.html.erb:
+10: 		<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAA-Yp0oSbY6u8WYWZ1Y8XoIxTJQa0g3IQ9GZqIMmInSLzwtGDKaBQ6zLSZhyaBUbKIvP6wHUt1ZnNZrA"></script>
+11: 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+12: 		<%= javascript_include_tag "jqueryui" %>
+13: 		<%= stylesheet_include_tag "jqueryui" %>
+14: 	</head>
+15: 	<body>
+16: 		<%= yield %>
+
+    app/views/layouts/application.html.erb:13
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (100.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:07:59) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+
+ActionView::TemplateError (undefined method `stylesheet_include' for #<ActionView::Base:0x2c18018>) on line #13 of app/views/layouts/application.html.erb:
+10: 		<script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAA-Yp0oSbY6u8WYWZ1Y8XoIxTJQa0g3IQ9GZqIMmInSLzwtGDKaBQ6zLSZhyaBUbKIvP6wHUt1ZnNZrA"></script>
+11: 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+12: 		<%= javascript_include_tag "jqueryui" %>
+13: 		<%= stylesheet_include "jqueryui" %>
+14: 	</head>
+15: 	<body>
+16: 		<%= yield %>
+
+    app/views/layouts/application.html.erb:13
+    <internal:prelude>:8:in `synchronize'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (95.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:08:18) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 592ms (View: 11, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:08:58) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 173ms (View: 4, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:09:04) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 202ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:12:23) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 242ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:14:09) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 188ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:14:22) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (87.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 284ms (View: 12, DB: 88) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:16:13) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (4.9ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 280ms (View: 14, DB: 5) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:16:49) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 201ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:17:04) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 300ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:17:22) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.7ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 196ms (View: 16, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:18:53) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 280ms (View: 97, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:19:05) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.7ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 223ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:19:26) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 195ms (View: 4, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:19:35) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.9ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 304ms (View: 12, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:20:00) [GET]
+  Parameters: {"id"=>"10023"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 220ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/10023]
+
+
+Processing ForecastController#search (for 127.0.0.1 at 2010-11-19 10:20:18) [GET]
+Rendering template within layouts/application
+Rendering forecast/search
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ForecastController#redirect_search (for 127.0.0.1 at 2010-11-19 10:20:25) [GET]
+  Parameters: {"q"=>"new york, ny"}
+Redirected to http://localhost:3000/forecast/for/new-york-ny
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/forecast/redirect_search?q=new+york%2C+ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:20:25) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.8ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 195ms (View: 4, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:20:47) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 288ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:21:26) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (4.9ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 173ms (View: 3, DB: 5) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:21:30) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 225ms (View: 3, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:23:18) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (4.7ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 289ms (View: 12, DB: 5) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:23:35) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.7ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 217ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:25:56) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 259ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:26:25) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 281ms (View: 14, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:26:28) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 189ms (View: 4, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:26:33) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 186ms (View: 4, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:26:57) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.8ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 270ms (View: 11, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:27:32) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 208ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:27:43) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 207ms (View: 16, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:27:45) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.9ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 188ms (View: 3, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:28:45) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 266ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:31:18) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 184ms (View: 4, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:31:45) [GET]
+  Parameters: {"id"=>"tuscon-az"}
+
+SyntaxError (/Users/jsomers/relweather/app/models/forecast.rb:31: syntax error, unexpected ';', expecting '}'):
+  app/controllers/forecast_controller.rb:11:in `for'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (79.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:31:50) [GET]
+  Parameters: {"id"=>"tuscon-az"}
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 510ms (View: 6, DB: 0) | 200 OK [http://localhost/forecast/for/tuscon-az]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:31:52) [GET]
+  Parameters: {"id"=>"tuscon-az"}
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 136ms (View: 4, DB: 0) | 200 OK [http://localhost/forecast/for/tuscon-az]
+  [4;35;1mForecast Load (0.7ms)[0m   [0mSELECT * FROM "forecasts" ORDER BY forecasts.id DESC LIMIT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Tucson, AZ', 'Tucson, AZ', 54, 27, 'Sunny', 'Wind: S at 10 mph', '2010-11-19 15:32:48', '2010-11-19 15:32:48', '2010-11-19 15:32:48')[0m
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:32:54) [GET]
+  Parameters: {"id"=>"tucson-az"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'Tucson, AZ') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 298ms (View: 17, DB: 1) | 200 OK [http://localhost/forecast/for/tucson-az]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:32:58) [GET]
+  Parameters: {"id"=>"tucson-az"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'Tucson, AZ') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 171ms (View: 3, DB: 1) | 200 OK [http://localhost/forecast/for/tucson-az]
+
+
+Processing ApplicationController#for (for 127.0.0.1 at 2010-11-19 10:35:50) [GET]
+  Parameters: {"id"=>"tucson-az"}
+
+SyntaxError (/Users/jsomers/relweather/app/controllers/forecast_controller.rb:19: syntax error, unexpected $end, expecting keyword_end):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (77.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:36:15) [GET]
+  Parameters: {"id"=>"tucson-az"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'Tucson, AZ') [0m
+Completed in 166ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/tucson-az]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:36:35) [GET]
+  Parameters: {"id"=>"tucson-az"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Load (0.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'Tucson, AZ') [0m
+Completed in 295ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/tucson-az]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:36:39) [GET]
+  Parameters: {"id"=>"tucson-az"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Load (0.3ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'Tucson, AZ') [0m
+Completed in 272ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/tucson-az]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:36:51) [GET]
+  Parameters: {"id"=>"tucson-az"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'Tucson, AZ') [0m
+Completed in 201ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/tucson-az]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:36:56) [GET]
+  Parameters: {"id"=>"tucson-az"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'Tucson, AZ') [0m
+Completed in 167ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/tucson-az]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:37:00) [GET]
+  Parameters: {"id"=>"tucson-az"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Tucson, AZ') [0m
+  [4;35;1mForecast Load (0.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'Tucson, AZ') [0m
+Completed in 168ms (View: 1, DB: 1) | 200 OK [http://localhost/forecast/for/tucson-az]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:37:12) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 289ms (View: 3, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:38:59) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.4ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 208ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:39:23) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 199ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:39:35) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.0ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 284ms (View: 11, DB: 5) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:39:44) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.2ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 213ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:40:04) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.5ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 543ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:40:25) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.7ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 206ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
+
+
+Processing ForecastController#for (for 127.0.0.1 at 2010-11-19 10:40:32) [GET]
+  Parameters: {"id"=>"new-york-ny"}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'New York, NY') [0m
+  [4;35;1mForecast Load (5.6ms)[0m   [0mSELECT * FROM "forecasts" WHERE (time >= '2010-11-18' and time <= '2010-11-19' and city = 'New York, NY') [0m
+Rendering template within layouts/application
+Rendering forecast/for
+Completed in 194ms (View: 15, DB: 6) | 200 OK [http://localhost/forecast/for/new-york-ny]
