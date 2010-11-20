@@ -51,13 +51,13 @@ class Forecast < ActiveRecord::Base
   end
   
   def self.relative(q)
-    t = Forecast.get(q)
+    f = Forecast.get(q)
     
-    ys = (t ? Forecast.all_within_window_for_city(Date.yesterday, Date.today, t[:city]) : [])
+    ys = (f ? Forecast.all_within_window_for_city(Date.yesterday, Date.today, f[:city]) : [])
     if ys.empty? then return nil end
     
-    t[:time] = t[:time].to_i
-    [t, ys, (Date.yesterday + 0.minutes).to_i]
+    f[:time] = f[:time].to_i
+    [f, ys, (Date.yesterday + 0.minutes).to_i]
   end
 
 end
