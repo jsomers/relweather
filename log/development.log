@@ -16157,3 +16157,4 @@ Completed in 666ms (View: 2, DB: 6) | 200 OK [http://localhost/forecast/for/summ
   [4;35;1mForecast Create (0.4ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Akron, Ohio', 'Akron, OH', 42, 87, 'Cloudy', 'W at 5 mph', '2010-11-20 14:53:35', '2010-11-20 14:53:35', '2010-11-20 14:53:35')[0m
   [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" WHERE (city = 'Boise, ID') [0m
   [4;35;1mForecast Create (0.5ms)[0m   [0mINSERT INTO "forecasts" ("zip_code", "city", "current_temperature", "humidity", "conditions", "wind", "created_at", "updated_at", "time") VALUES('Boise, Idaho', 'Boise, ID', 34, 93, 'Snow Showers', 'N at 0 mph', '2010-11-20 14:53:35', '2010-11-20 14:53:35', '2010-11-20 14:53:35')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "forecasts" [0m
