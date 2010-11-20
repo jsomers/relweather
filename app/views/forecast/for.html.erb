@@ -1,4 +1,8 @@
 <style type="text/css">
+	#container {
+		margin: 10px 10px 10px 10px;
+	}
+	
 	#forecast span {
 		font-weight: bold;
 	}
@@ -6,6 +10,19 @@
 	#range {
 		width: 500px;
 	}
+	
+	#upshot {
+		margin-top: 10px;
+	}
+	
+	#upshot.warmer {
+		color: red;
+	}
+	
+	#upshot.colder {
+		color: blue;
+	}
+
 </style>
 
 <script type="text/javascript">
@@ -48,22 +65,22 @@
 			return [forecast.time - day - 35 * 60, forecast.time - day + 35 * 60];
 		}
 		
-		init = function() {
-			for (e in forecast) {
-				$("#" + e).html(forecast[e]);
-			};
-			diff(default_range());
-		}; init()
-		
 		time_for_notch = function(n) {
 			var t = base_time;
 			var hr = 60 * 60;
 			return t + hr * n;
 		};
 		
+		init = function() {
+			for (e in forecast) {
+				$("#" + e).html(forecast[e]);
+			};
+			diff([time_for_notch(9), time_for_notch(17)]);
+		}; init()
+		
 		display_time = function(s, e) {
-			s_to_str = (s >= 12 ? s % 12 + "pm" : s + "am").replace("0am", "12am").replace("0pm", "12pm");
-			e_to_str = (e >= 12 ? e % 12 + "pm" : e + "am").replace("0am", "12am").replace("0pm", "12pm");;
+			s_to_str = (s >= 12 ? s % 12 + "pm" : s + "am").replace("0am", "12am").replace("0pm", "12pm").replace("112", "10");
+			e_to_str = (e >= 12 ? e % 12 + "pm" : e + "am").replace("0am", "12am").replace("0pm", "12pm").replace("112", "10");
 			$("#range-in-words").html("between <b>" + s_to_str + "</b> and <b>" + e_to_str + "</b> yesterday")
 		};
 
@@ -81,16 +98,18 @@
 	})
 </script>
 
-<ul id="forecast">
-	<li>City: <span id="city"></span></li>
-	<li>Conditions: <span id="conditions"></span></li>
-	<li>Current temperature: <span id="current_temperature"></span><strong>°F</strong></li>
-	<li>Humidity: <span id="humidity"></span><strong>%</strong></li>
-	<li>Wind: <span id="wind"></span></li>
-</ul>
+<div id="container">
+	<ul id="forecast">
+		<li>City: <span id="city"></span></li>
+		<li>Conditions: <span id="conditions"></span></li>
+		<li>Current temperature: <span id="current_temperature"></span><strong>°F</strong></li>
+		<li>Humidity: <span id="humidity"></span><strong>%</strong></li>
+		<li>Wind: <span id="wind"></span></li>
+	</ul>
 
-<div id="range"></div>
+	<div id="range"></div>
 
-<div id="upshot" class="warmer">
-	Right now, it's <span id="mag"></span> degrees <span id="dir"></span> than it was <span id="range-in-words">around the same time yesterday</span>.
+	<div id="upshot" class="warmer">
+		Right now, it's <span id="mag" style="font-weight: bold;"></span> degrees <span id="dir" style="font-weight: bold;"></span> than it was <span id="range-in-words">between <b>9am</b> and <b>5pm</b> yesterday</span>.
+	</div>
 </div>

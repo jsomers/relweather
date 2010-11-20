@@ -11,5 +11,6 @@ namespace :fetch do
     Forecast.all.collect(&:city).each do |c|
       Forecast.get(c, auto = true)
     end
+    Forecast.find(:all, :conditions => ["time < ?", 2.days.ago]).each {|f| f.destroy}
   end
 end
