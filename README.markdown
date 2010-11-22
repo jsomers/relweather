@@ -2,6 +2,8 @@ It's hard to say exactly what "55 degrees" feels like. But everyone knows how ho
 
 ## TODOs
 
+0. Move JS into its own file.
+
 1. Cache user searches so that we don't have to hit Google's API so often.
 
 2. Put Google API hits in a job queue.
